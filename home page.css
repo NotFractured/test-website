@@ -1,0 +1,146 @@
+/* Body and gradient background */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #34d399, #2e5548, #10b981, #064e3b);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Background box */
+.leaves-box {
+  width: 100%;
+  height: 100vh;
+  background-image: url('leaves.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+/* Move the word "Michal" higher with improved shadow */
+.leaves-box h1 {
+  margin-top: -450px; /* move text higher */
+  font-size: 6rem;
+  text-align: center;
+  text-shadow: 8px 8px 12px rgba(0, 0, 0, 0.7),
+               0 0 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #2e5548, #34d399);
+  padding: 15px 30px;
+  position: fixed;
+  width: 98%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin-top: -5px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li {
+  display: inline;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #064e3b;
+}
+
+/* Hero Image */
+.hero-image {
+  display: block;
+  width: 1850px;
+  height: 500px;
+  margin: -600px auto 0 auto;
+  box-shadow: 10px 50px 80px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+}
+
+/* Lore Section (Two Columns) */
+.lore-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  margin: 80px auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.lore-column {
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent dark background */
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 1);
+  flex: 1;
+  min-width: 300px;
+}
+
+.lore-column h2 {
+  margin-top: 0;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.lore-column p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Footer */
+.footer {
+  background: transparent;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #064e3b;
+}
